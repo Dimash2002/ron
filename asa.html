@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zhama. | Online Storefront for a Local Upcycling Clothing Brand</title>
+  <link rel="stylesheet" href="dimcss.css">
+  <meta name="description" content="Oversized clothing made from reclaimed denim, knitwear and canvas, sewn in Almaty.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme switch: dark by default, checked = light. Label lives in the footer. -->
+  <input type="checkbox" id="theme-toggle" class="visually-hidden">
+
+  <header class="site-header">
+    <a href="#top" class="logo" aria-label="zhama. home">zhama<span>.</span></a>
+    <input type="checkbox" id="menu-toggle" class="visually-hidden">
+    <label for="menu-toggle" class="burger" aria-label="Open menu"><span></span></label>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#collections">Collections</a>
+      <a href="#philosophy">Brand Philosophy</a>
+      <a href="#process">Upcycling Process</a>
+      <a href="#stores">Stores</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <article class="hero-content">
+        <p class="hero-note">Autumn / Winter collection, sewn in Almaty</p>
+        <h1 id="hero-title">Unique Oversized Clothing from Recycled Materials</h1>
+        <p>Every piece starts as someone else's jeans, sweaters or tent canvas. No two are the same.</p>
+        <a href="#collections" class="btn">View the lookbook</a>
+      </article>
+    </section>
+
+    <!-- GRID: product catalog -->
+    <section id="collections" class="block" aria-labelledby="collections-title">
+      <h2 id="collections-title">Collections</h2>
+      <p class="lead">Made in runs of 20 or fewer. When a size is gone, it is gone.</p>
+
+      <section class="product-grid" aria-label="Product catalog">
+        <article class="card">
+          <figure class="swatch swatch-denim" role="img" aria-label="Patchwork denim fabric"></figure>
+          <h3>Chore coat, patchwork denim</h3>
+          <p class="price">42 000 ₸</p>
+          <dl>
+            <dt>Sizes</dt><dd>M, L, XL (oversized fit)</dd>
+            <dt>Materials</dt><dd>80% reclaimed denim, 20% organic cotton lining</dd>
+          </dl>
+          <button type="button" class="btn">Buy</button>
+        </article>
+
+        <article class="card">
+          <figure class="swatch swatch-knit" role="img" aria-label="Knitted sweater yarn"></figure>
+          <h3>Unravelled knit hoodie</h3>
+          <p class="price">28 500 ₸</p>
+          <dl>
+            <dt>Sizes</dt><dd>S to XL (oversized fit)</dd>
+            <dt>Materials</dt><dd>65% reclaimed wool and acrylic knit, 35% recycled polyester fleece</dd>
+          </dl>
+          <button type="button" class="btn">Buy</button>
+        </article>
+
+        <article class="card">
+          <figure class="swatch swatch-canvas" role="img" aria-label="Army canvas fabric"></figure>
+          <h3>Canvas bomber</h3>
+          <p class="price">51 000 ₸</p>
+          <dl>
+            <dt>Sizes</dt><dd>L, XL</dd>
+            <dt>Materials</dt><dd>90% reclaimed tent canvas, 10% recycled nylon lining</dd>
+          </dl>
+          <button type="button" class="btn">Buy</button>
+        </article>
+
+        <article class="card">
+          <figure class="swatch swatch-shirt" role="img" aria-label="Striped shirt fabric"></figure>
+          <h3>Shirt-scrap wide trousers</h3>
+          <p class="price">24 000 ₸</p>
+          <dl>
+            <dt>Sizes</dt><dd>S, M, L (wide cut)</dd>
+            <dt>Materials</dt><dd>100% reclaimed cotton shirting</dd>
+          </dl>
+          <button type="button" class="btn">Buy</button>
+        </article>
+      </section>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section id="philosophy" class="block alt" aria-labelledby="philosophy-title">
+      <h2 id="philosophy-title">Brand Philosophy</h2>
+      <article class="prose">
+        <p>The fashion industry throws away a truck of clothes every second. We think the cloth is still good, so we cut, patch and re-sew it into something you will keep.</p>
+        <p>Sustainable development, for us, means three things: no new fabric where old fabric will do, fair pay for the people who sew, and repair for life on everything we sell.</p>
+      </article>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="block" aria-labelledby="process-title">
+      <h2 id="process-title">Upcycling Process</h2>
+      <ol class="steps">
+        <li><h3>Collect</h3><p>Donated clothing arrives at our studio and is sorted by fabric and condition.</p></li>
+        <li><h3>Wash and deconstruct</h3><p>Seams are opened, buttons saved, and the cloth is washed.</p></li>
+        <li><h3>Redesign</h3><p>Panels are laid out by hand so each garment gets its own pattern.</p></li>
+        <li><h3>Sew and number</h3><p>Each piece is sewn in Almaty and gets a number in its collar.</p></li>
+      </ol>
+    </section>
+
+    <!-- STORES -->
+    <section id="stores" class="block alt" aria-labelledby="stores-title">
+      <h2 id="stores-title">Stores</h2>
+      <ul class="stores">
+        <li><strong>Almaty studio</strong><br>Open Tuesday to Sunday, 11:00 to 19:00</li>
+        <li><strong>Astana pop-up</strong><br>First weekend of each month</li>
+        <li><strong>Online</strong><br>Delivery across Kazakhstan in 3 to 5 days</li>
+      </ul>
+    </section>
+
+    <!-- FEEDBACK FORM -->
+    <section id="donate" class="block" aria-labelledby="donate-title">
+      <h2 id="donate-title">Send us your old clothes</h2>
+      <p class="lead">Tell us what you have. We will reply with a free pickup or drop-off option.</p>
+
+      <form class="form" action="#" method="post">
+        <label for="item">Item specification</label>
+        <textarea id="item" name="item" rows="4" required minlength="10"
+          placeholder="e.g. 3 pairs of jeans, 2 wool sweaters, all clean"></textarea>
+
+        <label for="address">Shipping address</label>
+        <input type="text" id="address" name="address" required minlength="8"
+          autocomplete="street-address" placeholder="City, street, building, apartment">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email"
+          placeholder="name@example.com">
+
+        <label for="phone">Contact phone</label>
+        <input type="tel" id="phone" name="phone" required pattern="\+?[0-9\s\-]{10,16}"
+          autocomplete="tel" placeholder="+7 700 000 0000">
+
+        <button type="submit" class="btn">Send request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section class="manifesto" aria-labelledby="manifesto-title">
+      <h2 id="manifesto-title">Eco-awareness manifesto</h2>
+      <p>Wear it longer. Repair it before replacing it. Pass it on when you are done. The greenest garment is the one that already exists.</p>
+    </section>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <h3>Explore</h3>
+      <a href="#collections">Collections</a>
+      <a href="#philosophy">Brand Philosophy</a>
+      <a href="#process">Upcycling Process</a>
+      <a href="#stores">Stores</a>
+    </nav>
+
+    <nav class="footer-nav" aria-label="Social networks">
+      <h3>Follow</h3>
+      <a href="https://instagram.com" rel="noopener">Instagram</a>
+      <a href="https://t.me" rel="noopener">Telegram</a>
+      <a href="https://tiktok.com" rel="noopener">TikTok</a>
+    </nav>
+
+    <section class="legal" aria-label="Legal information">
+      <p>© 2026 zhama. Individual entrepreneur, Almaty, Kazakhstan.</p>
+      <p><a href="#">Privacy policy</a> · <a href="#">Terms of sale</a> · <a href="#">Returns</a></p>
+      <label for="theme-toggle" class="theme-switch">Switch to light theme</label>
+    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
